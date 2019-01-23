@@ -1,13 +1,10 @@
 function asyncAdder(a, b, cb) {
-
     if (cb) {
-
         setTimeout(function () {
             cb(a + b);
         }, 500);
 
     } else {
-
         return new Promise(function (res) {
             setTimeout(function () {
                 res(a + b);
